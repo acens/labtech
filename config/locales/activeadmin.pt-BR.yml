@@ -1,0 +1,29 @@
+pt-BR:
+  activerecord:
+    models:
+      post: "Blog"
+      member: "Membro"
+      project: "Portifólio"
+    attributes:
+      post:
+        title: "Título"
+        description: "Descrição"
+        photo: "Foto"
+        photo_file_name: "Nome do arquivo "
+        photo_content_type: "Tipo"
+        photo_file_size: "Tamanho"
+        photo_updated_at: "Data"
+      member:
+        name: "Nome"
+        description: "Descrição"
+        photo_file_name: "Nome do arquivo"
+        photo_content_type: "Tipo"
+        photo_file_size: "Tamanho"
+        photo_updated_at: "Data"
+      project:
+        name: "Nome"
+        description: "Descrição"
+        ico_file_name: "Nome do arquivo"
+        ico_content_type: "Tipo"
+        ico_file_size: "Tamanho"
+        ico_updated_at: "Data"
