@@ -1,7 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br" class="no-js">
-    <body>
-
+<body>
+<div class="page-loader"></div>
 <!--========== SLIDER ==========-->
     <section id="home">
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
@@ -72,7 +70,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <h3><a href="#"><%= post.title%></a></h3>
+                            <h3><%= post.title%></h3>
                             <p class="description-blog"><%= post.description%></p>
                             <%= link_to "Leia mais", post_path(post), class: "link"%>
                             <!-- <a class="link" href="#">Leia mais</a> -->
@@ -104,7 +102,7 @@
                                 <li class="pricing-list-item">lista 2</li>
                                 <li class="pricing-list-item">lista 3</li>
                             </ul>
-                            <a href="" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Inscrição</a>
+                            <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
                         </div>
                         <!-- End Pricing -->
                     </div>
@@ -123,7 +121,7 @@
                                 <li class="pricing-list-item">lista 2</li>
                                 <li class="pricing-list-item">lista 3</li>
                             </ul>
-                            <a href="" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Inscrição</a>
+                            <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
                         </div>
                         <!-- End Pricing -->
                     </div>
@@ -142,7 +140,7 @@
                                 <li class="pricing-list-item">lista 2</li>
                                 <li class="pricing-list-item">lista 3</li>
                             </ul>
-                            <a href="" class="btn-theme btn-theme-sm btn-default-bg text-uppercase">Inscrição</a>
+                            <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
                         </div>
                         <!-- End Pricing -->
                     </div>
@@ -190,7 +188,7 @@
                     </div>
                     <div class="col-xs-6 text-right">
                         <p class="margin-b-0"><a class="color-base fweight-700" href="">Lab Tech</a>
-                          Site Desenvolvido por: <a class="color-base fweight-700" href="http://www.acensjr.com/" target="_blank" >Acens</a>
+                          site desenvolvido por <a class="color-base fweight-700" href="http://www.acensjr.com/" target="_blank" >Acens</a>
                         </p>
                     </div>
                 </div>

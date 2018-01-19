@@ -1,1 +1,15 @@
-<%= @post.title %>
+<div class="container-fluid">
+  <div>
+    <% @post.each do |post| %>
+    <div class="margin-b-20">
+        <div class="margin-b-20">
+            <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                <%= image_tag post.photo(:large), class: "img-responsive"%>
+            </div>
+        </div>
+    </div>
+    <h1><%= post.title%></h1>
+    <p class="description-blog"><%= post.description%></p>
+    <% end %>
+  </div>
+</div>
