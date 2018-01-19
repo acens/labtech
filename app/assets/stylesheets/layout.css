@@ -457,6 +457,7 @@ fieldset[disabled] .btn-theme {
 .footer {
   background-image: url("/images/02top.jpg");
   background-size: cover;
+  background-attachment: fixed;
   background-position: center center;
 }
 
@@ -908,20 +909,20 @@ fieldset[disabled] .btn-theme {
 }
 
 .form-control:focus {
-  color: #515769;
+  color: #e1e3e8;
   box-shadow: none;
 }
 
 .form-control:focus::-moz-placeholder {
-  color: #515769;
+  color: #e1e3e8;
 }
 
 .form-control:focus:-ms-input-placeholder {
-  color: #515769;
+  color: #e1e3e8;
 }
 
 .form-control:focus::-webkit-input-placeholder {
-  color: #515769;
+  color: #e1e3e8;
 }
 
 /*------------------------------------------------------------------
@@ -1191,7 +1192,11 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-sky-light {
-  background-image: url("/images/02.jpg");
+  background-image: url("/images/ilustration5.jpg");
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
 }
 
 /*------------------------------------------------------------------

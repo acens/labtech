@@ -12,6 +12,10 @@
 }
 
 .form-control{
-border-style: solid;
-border-color: Azul;
-border-width: thin;}
+  border-style: solid;
+  border-color: Azul;
+  border-width: thin;
+}
+.containernewform .form-control:focus{
+  color:black;
+}
