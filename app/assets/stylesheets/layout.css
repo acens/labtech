@@ -1541,8 +1541,8 @@ fieldset[disabled] .btn-theme {
 
 /*MAP*/
 #map {
-  position: relative !important;
-  margin-left: 500px !important;
+  /*position: relative !important;
+  margin-left: 500px !important;*/
 }
 
 .description{

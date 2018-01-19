@@ -25,6 +25,16 @@
 //= require components/wow.min
 //= require components/swiper.min
 //= require components/masonry.min
-//= require vendor/bootstrap/js/npm
+//= require jquery.nav
 //= require turbolinks
 //= require_tree .
+
+
+$('#nav').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollThreshold: 0.5,
+	filter: ':not(.external)',
+	easing: 'swing'
+});

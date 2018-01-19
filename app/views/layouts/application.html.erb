@@ -6,7 +6,7 @@
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta content="width=device-width, initial-scale=1" name="viewport"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta content="" name="description"/>
     <meta content="" name="acens"/>
 
@@ -56,14 +56,34 @@
                         <!-- Collect the nav links, forms, and other content for toggling -->
                         <div class="collapse navbar-collapse nav-collapse">
                             <div class="menu-container">
-                                <ul class="navbar-nav navbar-nav-right">
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover active" href="http://localhost:3000/">Início</a></li>
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#blog">Blog</a></li>
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#course">Cursos</a></li>
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="">Quem somos</a></li>
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#portfolio">Portifólio</a></li>
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contato</a></li>
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="subscriptions">Inscrições</a></li>
+                                <ul id="nav" class="navbar-nav navbar-nav-right">
+                                    <li class="nav-item current">
+                                      <%= link_to "Início", root_url, class: "external nav-item-child nav-item-hover active" %>
+                                    </li>
+                                    <li class="nav-item current">
+                                      <%= link_to "Blog", root_url, class: "external nav-item-child nav-item-hover" %>
+                                    </li>
+                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#blog">Blog</a></li> -->
+                                    <li class="nav-item current">
+                                      <%= link_to "Cursos", root_url, class: "external nav-item-child nav-item-hover" %>
+                                    </li>
+                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#course">Cursos</a></li> -->
+                                    <li class="nav-item current">
+                                      <%= link_to "Blog", root_url, class: "external nav-item-child nav-item-hover" %>
+                                    </li>
+                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="">Quem somos</a></li> -->
+                                    <li class="nav-item current">
+                                      <%= link_to "Portifólio", root_url, class: "external nav-item-child nav-item-hover" %>
+                                    </li>
+                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#portfolio">Portifólio</a></li> -->
+                                    <li class="nav-item current">
+                                      <%= link_to "contato", root_url, class: "external nav-item-child nav-item-hover" %>
+                                    </li>
+                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contato</a></li> -->
+                                    <li class="nav-item current">
+                                      <%= link_to "Inscrições", subscriptions_url, class: "external nav-item-child nav-item-hover" %>
+                                    </li>
+                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="subscriptions">Inscrições</a></li> -->
                                 </ul>
                             </div>
                         </div>
