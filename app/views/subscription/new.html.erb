@@ -1,27 +1,29 @@
+<div class="containernewform">
 <div class="sm-margin-b-2"></div>
-<div id="containernewform"class="w3-container">
+<div class="container-fluid">
 
     <div class="espaco" align="center">
       <h3>Preencha os dados para cadastro.</h3>
 
       <%= simple_form_for @subscription, :html => {:class => 'form-group' } do |f| %>
         <div class="form-group">
-        <%= f.input :name, label: 'Nome Completo', input_html: { class: 'form-control', placeholder: "Insira seu Nome"}%>
+            <%= f.input :name, label: 'Nome Completo', input_html: { class: 'form-control', placeholder: "Insira seu Nome"}%>
         </div>
         <div class="form-group">
-        <%= f.input :matricula, label: 'Matrícula', input_html: { class: 'form-control', placeholder: "Insira sua Matrícula" }%>
+            <%= f.input :matricula, label: 'Matrícula', input_html: { class: 'form-control', placeholder: "Insira sua Matrícula" }%>
         </div>
         <div class="form-group">
-        <%= f.input :email, label: 'E-mail', input_html: { class: 'form-control', placeholder: "Insira seu E-mail"} %>
+            <%= f.input :email, label: 'E-mail', input_html: { class: 'form-control', placeholder: "Insira seu E-mail"} %>
         </div>
         <div class="form-group">
-        <%= f.file_field :file, label: 'Anexe seu Currículo', input_html: { class: 'form-control', placeholder: "seu currículo"}%>
+            <%=f.label 'Anexe seu Currículo'%>
+            <%= f.file_field :file, label: 'Anexe seu Currículo', input_html: { class: 'form-control', placeholder: "seu currículo"}%>
         </div>
         <div class="form-group">
           <%= f.label "Selecione uma opção"%>
           <%= f.select(:choice,[['Inscrição no curso',1],['Inscrição para Projetos',2]],required: true)%>
         </div>
-        
+
         <div class= "hidden">
         </div>
         <div>
@@ -31,3 +33,4 @@
       <% end %>
       </div>
     </div>
+</div>

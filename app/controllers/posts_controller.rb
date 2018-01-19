@@ -11,6 +11,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find params[:id]
   end
+
   def create
     valores = params.require(:post).permit :title,:description,:photo,:admin_user_id,:admin_user
     @post = Post.new valores

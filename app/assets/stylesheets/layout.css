@@ -455,7 +455,7 @@ fieldset[disabled] .btn-theme {
   	[Footer]
 ------------------------------------------------------------------*/
 .footer {
-  background-image: url(../public/images/footerImg.jpg) no-repeat;
+  background-image: url("/images/02top.jpg");
   background-size: cover;
   background-position: center center;
 }
@@ -1191,7 +1191,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .bg-color-sky-light {
-  background: #fafafa;
+  background-image: url("/images/02.jpg");
 }
 
 /*------------------------------------------------------------------
@@ -1549,7 +1549,7 @@ fieldset[disabled] .btn-theme {
   font-size: 15px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: lightgrey;
+  color: rgb(230, 220, 220);
   line-height: 1.4;
   margin-bottom: 15px;
 }
