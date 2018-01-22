@@ -9,9 +9,9 @@ Rails.application.routes.draw do
   root to: "home#index"
 
 # posts :
-    resources :posts
+    resources :post
     get '/posts' => 'posts#post'
-    get '/posts/:id' => "posts#show"
+    get '/posts/:id' => "posts#show", as: :postagem_show
 
  # Projects
     get '/projetos' => 'project#project'

@@ -1,8 +1,8 @@
-<!--========== PAGE LAYOUT BLOG ==========-->
+<!-- ========== PAGE LAYOUT BLOG ==========-->
     <section id="blog">
             <div class="row margin-b-50">
                 <!-- Our Exceptional Solutions -->
-                <% @post.each do |post|%>
+                <% @postagem.each do |post|%>
                     <div class="col-md-4 col-sm-12 sm-margin-b-50">
                             <div class="margin-b-20">
                                 <div class="margin-b-20">
@@ -13,7 +13,7 @@
                             </div>
                             <h3><a href="#"><%= post.title%></a></h3>
                             <p class="description-blog"><%= post.description%></p>
-                            <%= link_to "Leia mais", post_path(post), class: "link"%>
+                            <%= link_to "Leia mais", postagem_show_path(post), class: "link"%>
                             <!-- <a class="link" href="#">Leia mais</a> -->
                     </div>
                 <%end%>
@@ -21,4 +21,4 @@
             </div>
             <!--// end BLOG -->
         </section>
-<!--========== END PAGE LAYOUT BLOG ==========-->
+<!--========== END PAGE LAYOUT BLOG ========== -->

@@ -18,13 +18,14 @@ form title: 'Novo post' do |f|
     f.input :title
     f.input :description
     f.input :photo, as: :file
-    actions 
+    actions
   end
 end
 
 
-#   controller do
+# controller do
 #     # This code is evaluated within the controller class
+
 
 #     def destroy
 # 	    redirect_to root_url, notice: "Artigo removido!"
