@@ -30,7 +30,6 @@
   </head>
 
   <body>
-
     <!--========== NAV ==========-->
           <header class="header navbar-fixed-top">
                 <!-- Navbar -->
@@ -45,8 +44,8 @@
 
                             <!-- Logo -->
                             <div class="logo">
-                                    <img class="logo-img logo-img-main" src="/images/LabTech_logo_dark.png" alt="Logo">
-                                    <img class="logo-img logo-img-active" src="images/LabTech_logo.png" alt="Logo">
+                                    <a href="/"><img class="logo-img logo-img-main" src="/images/LabTech_logo_dark.png" alt="Logo"></a>
+                                    <a href="/"><img class="logo-img logo-img-active" src="images/LabTech_logo.png" alt="Logo"></a>
 
                             </div>
                             <!-- End Logo -->
@@ -56,33 +55,30 @@
                         <div class="collapse navbar-collapse nav-collapse">
                             <div class="menu-container">
                                 <ul id="nav" class="navbar-nav navbar-nav-right">
-                                    <li class="nav-item current">
+                                    <!-- <li class="nav-item current">
                                       <%= link_to "Início", root_url, class: "external nav-item-child nav-item-hover active" %>
-                                    </li>
-                                    <li class="nav-item current">
+                                    </li> -->
+                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/">Início</a></li>
+                                    <!-- <li class="nav-item current">
                                       <%= link_to "Blog", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li>
-                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#blog">Blog</a></li> -->
-                                    <li class="nav-item current">
+                                    </li> -->
+                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#blog">Blog</a></li>
+                                    <!-- <li class="nav-item current">
                                       <%= link_to "Cursos", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li>
-                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#course">Cursos</a></li> -->
-                                    <li class="nav-item current">
-                                      <%= link_to "Blog", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li>
-                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="">Quem somos</a></li> -->
-                                    <li class="nav-item current">
+                                    </li> -->
+                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#course">Cursos</a></li>
+                                    <!-- <li class="nav-item current">
                                       <%= link_to "Portifólio", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li>
-                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#portfolio">Portifólio</a></li> -->
-                                    <li class="nav-item current">
+                                    </li> -->
+                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="projetos">Portifólio</a></li>
+                                    <!-- <li class="nav-item current">
                                       <%= link_to "contato", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li>
-                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contato</a></li> -->
-                                    <li class="nav-item current">
+                                    </li> -->
+                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contato</a></li>
+                                    <!-- <li class="nav-item current">
                                       <%= link_to "Inscrições", subscriptions_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li>
-                                    <!-- <li class="nav-item"><a class="nav-item-child nav-item-hover" href="subscriptions">Inscrições</a></li> -->
+                                    </li> -->
+                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="subscriptions">Inscrições</a></li>
                                 </ul>
                             </div>
                         </div>

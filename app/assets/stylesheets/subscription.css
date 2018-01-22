@@ -2,15 +2,38 @@
     display: none;
 }
 
-.form-control{
-    margin-left: 100px;
-    margin-right: 100px;
+.title-form{
+    color:rgb(246, 246, 246);
+}
+
+.form-group .form-control{
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a6a7aa;
+    background: #fafafa;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
 }
 
 
+.backG{
+    background-image: url("/images/02top.jpg");
+    height: 100%;
+    width: 100%;
+    position: fixed;
+}
+
 .containernewform{
-  background-image: url("/images/ilustration1.jpg");
-  color: black;
+  color: white;
+  padding: 10px;
+}
+
+.select{
+    color: black;
 }
 
 /*flash*/

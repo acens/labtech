@@ -4,11 +4,16 @@
 @import 'animate';
 @import 'swiper.min';
 @import 'layout';
+@import 'subscription';
 
 
 
 .espaco {
   margin-top: 100px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  margin-left: auto;
 }
 
 .form-control{
@@ -16,6 +21,6 @@
   border-color: Azul;
   border-width: thin;
 }
-.containernewform .form-control:focus{
-  color:black;
+.form-group .form-control:focus{
+  color:white;
 }
