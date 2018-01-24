@@ -1,20 +1,20 @@
-<div class="back">
+<div class="BackBlog">
+    <div class="bg-color-sky-light">
+        <div class="content-lg container">
 
-    <div class="container" align="center">
-        <div class="row justify-content-md-center">
-            <h1 class="titleBlog"><%= @post.title%></h1>
-            <div class="margin-b-20">
+        <div class="container" align="center">
+            <div class="row justify-content-md-center">
+                <h1 class="titleBlog"><%= @post.title%></h1>
                 <div class="margin-b-20">
-                    <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                        <%= image_tag @post.photo(:medium), class: "img-responsive"%>
+                    <div class="margin-b-20">
+                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <%= image_tag @post.photo(:medium), class: "img-responsive"%>
+                        </div>
                     </div>
                 </div>
+                <p class="description-blog-page"><%= @post.description %></p>
             </div>
-            <p class="description-blog-page"><%= @post.description %></p>
+        </div>
         </div>
     </div>
 </div>
-
-        <p class="description-blog-page">
-            dfasjdfnasldfkmadfkgmasçdfkngaisdfnasldf <br/> alsdknslfnsdlfdfsgndfgsdnfgksdfg <br/>
-        </p>

@@ -6,8 +6,8 @@ pt-BR:
       project: "Portifólio"
     attributes:
       post:
-        title: "Título"
-        description: "Descrição"
+        title: "Título - Descrição"
+        description: "Corpo da Notícia"
         photo: "Foto"
         photo_file_name: "Nome do arquivo "
         photo_content_type: "Tipo"

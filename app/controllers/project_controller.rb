@@ -1,8 +1,7 @@
 class ProjectController < ApplicationController
 
   def project
-    render 'project'
-    @project = Project.all
+    @project = Project.all 
   end
 
 end

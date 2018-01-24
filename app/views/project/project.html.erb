@@ -28,36 +28,25 @@
 
 <div class="container">
 <!-- Clients -->
+
 <div class="bg-color-sky-light">
     <div class="content-lg container">
         <!-- Swiper Clients -->
         <div class="swiper-slider swiper-clients">
             <!-- Swiper Wrapper -->
             <div class="swiper-wrapper">
+                <% @project.each do |project| %>
                 <div class="swiper-slide">
-                    <img class="swiper-clients-img" src="images/01.png" alt="Clients Logo">
+                    <%= image_tag project.ico(:small), class: "swiper-clientes-img"%>
                 </div>
-                <div class="swiper-slide">
-                    <img class="swiper-clients-img" src="images/02.png" alt="Clients Logo">
-                </div>
-                <div class="swiper-slide">
-                    <img class="swiper-clients-img" src="images/03.png" alt="Clients Logo">
-                </div>
-                <div class="swiper-slide">
-                    <img class="swiper-clients-img" src="images/04.png" alt="Clients Logo">
-                </div>
-                <div class="swiper-slide">
-                    <img class="swiper-clients-img" src="images/05.png" alt="Clients Logo">
-                </div>
-                <div class="swiper-slide">
-                    <img class="swiper-clients-img" src="images/06.png" alt="Clients Logo">
-                </div>
+                <%end%>
             </div>
             <!-- End Swiper Wrapper -->
         </div>
         <!-- End Swiper Clients -->
     </div>
 </div>
+
 <!-- End Clients -->
 
 <!-- Promo Section -->
