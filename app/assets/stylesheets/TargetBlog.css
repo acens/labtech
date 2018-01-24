@@ -1,3 +1,18 @@
 .back{
+    background-image: url("/images/BackBlog.jpg");
+    height: 100%;
+    width: auto;
+    position: fixed;
+}
 
+.back .container{
+    margin-top: 100px;
+}
+
+.description-blog-page{
+    color:white;
+}
+
+.titleBlog{
+    color: white;
 }

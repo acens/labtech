@@ -13,6 +13,9 @@ Rails.application.routes.draw do
     get '/posts' => 'posts#post'
     get '/posts/:id' => "posts#show", as: :postagem_show
 
+# About Us
+    get 'home/about' => 'home#about'
+
  # Projects
     get '/projetos' => 'project#project'
 

@@ -6,11 +6,11 @@
 @import 'layout';
 @import 'subscription';
 @import 'TargetBlog';
-
+@import 'about';
 
 
 .espaco {
-  margin-top: 100px;
+  margin-top: 60px;
   position: relative;
   width: 100%;
   height: 100%;
@@ -23,5 +23,5 @@
   border-width: thin;
 }
 .form-group .form-control:focus{
-  color:white;
+  color: white;
 }

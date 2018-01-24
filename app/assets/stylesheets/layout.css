@@ -1191,8 +1191,16 @@ fieldset[disabled] .btn-theme {
   background: #999caa;
 }
 
-.bg-color-sky-light {
+#course .bg-color-sky-light {
   background-image: url("/images/ilustration5.jpg");
+  background-attachment:fixed;
+  background-repeat: no-repeat;
+  width: auto;
+  height: auto;
+}
+
+.bg-color-sky-light {
+  background-color: white;
   background-attachment:fixed;
   background-repeat: no-repeat;
   width: auto;
