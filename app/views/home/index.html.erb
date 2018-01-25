@@ -24,7 +24,7 @@
                                     <br/>distribuições de probabilidade mais utilizada para modelar fenômenos naturais.
                                 </p>
                             </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Saiba mais</a>
+                            <a href="/" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -38,7 +38,7 @@
                                     <br/>distribuições de probabilidade mais utilizada para modelar fenômenos naturais.
                                 </p>
                             </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Saiba mais</a>
+                            <a href="/" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Saiba mais</a>
                         </div>
                     </div>
                 </div>
@@ -88,28 +88,90 @@
     <div class="bg-color-sky-light">
         <div class="content-lg container">
             <div class="row row-space-1">
-                <div class="col-sm-4 sm-margin-b-2">
-                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                        <!-- Pricing -->
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-chemistry"></i>
-                                <h3>Curso de Big Data</h3>
-                                <p class="description-blog">Descrição do curso</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">lista 1</li>
-                                <li class="pricing-list-item">lista 2</li>
-                                <li class="pricing-list-item">lista 3</li>
-                            </ul>
-                            <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
-                        </div>
-                        <!-- End Pricing -->
-                    </div>
-                </div>
+                <%count = 1%>
+                <% @course.each do |curso|%>
+
+                <%if (count%3) == 1 %>
+                  <div class="col-sm-4 sm-margin-b-2">
+                      <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                          <!-- Pricing -->
+                          <div class="pricing">
+                              <div class="margin-b-30">
+                                  <i class="pricing-icon icon-chemistry"></i>
+                                  <h3><%= curso.nome %></h3>
+                                  <p class="description-blog"><%= curso.descricao%></p>
+                              </div>
+                              <ul class="list-unstyled pricing-list margin-b-50">
+                                  <li class="pricing-list-item"><%= curso.requisitos%></li>
+                                  <li class="pricing-list-item"><%= curso.ementa%></li>
+                                  <li class="pricing-list-item"><%= curso.professor%></li>
+                                  <li class="pricing-list-item"><%= curso.data%></li>
+                              </ul>
+                              <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
+                          </div>
+                      </div>
+                  </div>
+                <%count = count+1%>
+                <%next%>
+                <%end%>
+
+                <%if (count%3) == 2 %>
+                  <div class="col-sm-4 sm-margin-b-2">
+                      <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".1s">
+                          <!-- Pricing -->
+                          <div class="pricing">
+                              <div class="margin-b-30">
+                                  <i class="pricing-icon icon-chemistry"></i>
+                                  <h3><%= curso.nome %></h3>
+                                  <p class="description-blog"><%= curso.descricao%></p>
+                              </div>
+                              <ul class="list-unstyled pricing-list margin-b-50">
+                                  <li class="pricing-list-item"><%= curso.requisitos%></li>
+                                  <li class="pricing-list-item"><%= curso.ementa%></li>
+                                  <li class="pricing-list-item"><%= curso.professor%></li>
+                                  <li class="pricing-list-item"><%= curso.data%></li>
+                              </ul>
+                              <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
+                          </div>
+                      </div>
+                  </div>
+                <%count = count+1%>
+                <%next%>
+                <%end%>
+
+                <%if (count%3) == 0 %>
+                  <div class="col-sm-4 sm-margin-b-2">
+                      <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".1s">
+                          <!-- Pricing -->
+                          <div class="pricing">
+                              <div class="margin-b-30">
+                                  <i class="pricing-icon icon-chemistry"></i>
+                                  <h3><%= curso.nome %></h3>
+                                  <p class="description-blog"><%= curso.descricao%></p>
+                              </div>
+                              <ul class="list-unstyled pricing-list margin-b-50">
+                                  <li class="pricing-list-item"><%= curso.requisitos%></li>
+                                  <li class="pricing-list-item"><%= curso.ementa%></li>
+                                  <li class="pricing-list-item"><%= curso.professor%></li>
+                                  <li class="pricing-list-item"><%= curso.data%></li>
+                              </ul>
+                              <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
+                          </div>
+                      </div>
+                  </div>
+                <%count = count+1%>
+                <%next%>
+                <%end%>
+
+
+
+
+
+                <%end%>
+                <!--
                 <div class="col-sm-4 sm-margin-b-2">
                     <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-                        <!-- Pricing -->
+
                         <div class="pricing pricing-active">
                             <div class="margin-b-30">
                                 <i class="pricing-icon icon-chemistry"></i>
@@ -123,12 +185,12 @@
                             </ul>
                             <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
                         </div>
-                        <!-- End Pricing -->
+
                     </div>
                 </div>
                 <div class="col-sm-4">
                     <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".1s">
-                        <!-- Pricing -->
+
                         <div class="pricing">
                             <div class="margin-b-30">
                                 <i class="pricing-icon icon-chemistry"></i>
@@ -141,7 +203,7 @@
                                 <li class="pricing-list-item">lista 3</li>
                             </ul>
                             <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
-                        </div>
+                        </div> -->
                         <!-- End Pricing -->
                     </div>
                 </div>

@@ -11,7 +11,7 @@ class Subscription < MailForm::Base
     {
       :subject => "Inscrição Curso/Projetos.",
       :to => "labtech-ph@outlook.com",
-      :from => %("#{name}"<#{email}>)
+      :from => %("#{name}"<#{email}> "#{matricula}" "#{message}" )
     }
   end
 end

@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  nome: MyString
+  descricao: MyText
+  data: 2018-01-25
+  professor: MyString
+  requisitos: MyString
+  ementa: MyString
+
+two:
+  nome: MyString
+  descricao: MyText
+  data: 2018-01-25
+  professor: MyString
+  requisitos: MyString
+  ementa: MyString

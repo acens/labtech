@@ -1,6 +1,7 @@
 pt-BR:
   activerecord:
     models:
+      course: "Cursos"
       post: "Blog"
       member: "Membro"
       project: "Projetos(Portifólio)"
@@ -27,3 +28,10 @@ pt-BR:
         ico_content_type: "Tipo"
         ico_file_size: "Tamanho"
         ico_updated_at: "Data"
+      course:
+        nome: "Nome"
+        descricao: "Descrição"
+        data: "Data"
+        professor: "Professores"
+        requisitos: "Pré-Requisitos"
+        ementa: "Ementa do curso"
