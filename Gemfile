@@ -19,6 +19,7 @@ gem 'uglifier', '>= 1.3.0'
 
 gem "paperclip", "~> 5.0.0"
 
+gem "paperclip-cloudinary"
 
 gem 'activeadmin'
 

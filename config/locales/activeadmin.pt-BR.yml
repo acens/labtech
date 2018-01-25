@@ -3,7 +3,7 @@ pt-BR:
     models:
       post: "Blog"
       member: "Membro"
-      project: "Portifólio"
+      project: "Projetos(Portifólio)"
     attributes:
       post:
         title: "Título - Descrição"
