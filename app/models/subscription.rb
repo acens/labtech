@@ -1,6 +1,7 @@
 class Subscription < MailForm::Base
   attribute :name,      :validate => true
   attribute :matricula,  :validate => true
+  attribute :message, :validate => true
   attribute :email,     :validate => /\A([\w\.%\+\-]+)@([\w\-]+\.)+([\w]{2,})\z/i
   attribute :file,      :attachment => true
   attribute :choice
@@ -9,7 +10,7 @@ class Subscription < MailForm::Base
   def headers
     {
       :subject => "Inscrição Curso/Projetos.",
-      :to => "eduardo.patrick.98@gmail.com",
+      :to => "labtech-ph@outlook.com",
       :from => %("#{name}"<#{email}>)
     }
   end

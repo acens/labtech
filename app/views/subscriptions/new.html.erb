@@ -1,0 +1,36 @@
+<div class="backG">
+
+  <div class="sm-margin-b-2"></div>
+  <div class="row">
+    <div class="container col-md-offset-3 col-sm-12 col-md-6" >
+      <h3 class="title-form">Preencha os dados para cadastro.</h3>
+
+      <%= simple_form_for @subscription, :html => {:class => 'form-group' } do |f| %>
+      <div class="form-group">
+        <%= f.input :name, label: 'Nome Completo', input_html: { class: 'form-control', placeholder: "Insira seu Nome"}%>
+      </div>
+      <div class="form-group">
+        <%= f.input :matricula, label: 'Matrícula', input_html: { class: 'form-control', placeholder: "Insira sua Matrícula" }%>
+      </div>
+      <div class="form-group">
+        <%= f.input :email, label: 'E-mail', input_html: { class: 'form-control', placeholder: "Insira seu E-mail"} %>
+      </div>
+      <div class="form-group">
+        <%= f.input :message, as: :text, label: 'Mensagem', input_html: { class: 'form-control', placeholder: "Escreva sua mensagem"} %>
+      </div>
+      <div class="form-group">
+        <%=f.label 'Anexe seu Currículo'%>
+        <%= f.file_field :file, label: 'Anexe seu Currículo', input_html: { rows: 8, class: 'form-control', placeholder: "seu currículo"}%>
+      </div>
+      <div class="form-group">
+        <%= f.label "Selecione uma opção"%>
+        <div class="select">
+          <%= f.select(:choice,[['Inscrição no curso',1],['Inscrição para Projetos',2]],required: true)%>
+        </div>
+      </div>
+
+      <%= f.button :submit, 'Enviar dados', :class=> "btn btn-primary" %>
+      <% end %>
+    </div>
+  </div>
+</div>

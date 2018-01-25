@@ -11,7 +11,7 @@
 // about supported directives.
 //
 //= require rails-ujs
-//= require vendor/jquery.min
+//= require active_admin
 //= require vendor/jquery-migrate.min
 //= require vendor/bootstrap/js/bootstrap.min
 //= require vendor/jquery.easing

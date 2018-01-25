@@ -1,0 +1,19 @@
+---
+development:
+  cloud_name: datyejxxq
+  api_key: '474249755739325'
+  api_secret: nr2P4LDpnCPtep0CzTxh9fd9QQg
+  enhance_image_tag: true
+  static_image_support: false
+production:
+  cloud_name: datyejxxq
+  api_key: '474249755739325'
+  api_secret: nr2P4LDpnCPtep0CzTxh9fd9QQg
+  enhance_image_tag: true
+  static_image_support: true
+test:
+  cloud_name: datyejxxq
+  api_key: '474249755739325'
+  api_secret: nr2P4LDpnCPtep0CzTxh9fd9QQg
+  enhance_image_tag: true
+  static_image_support: false
