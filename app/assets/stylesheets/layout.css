@@ -899,6 +899,7 @@ fieldset[disabled] .btn-theme {
   box-shadow: none;
   border-radius: 0;
   padding-left: 15px;
+  background: rgba(0, 0, 0, 0.15);
 }
 
 .form-control::-moz-placeholder {
