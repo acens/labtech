@@ -65,8 +65,8 @@ Rails.application.configure do
 
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.default_url_options = { host: ENV["HOST_APPLICATION"]}
-
+  config.action_mailer.default_url_options = { host: 'lab-tech.herokuapp.com'}
+  Rails.application.routes.default_url_options[:host] = 'lab-tech.herokuapp.com'
   # Don't care if the mailer can't send.
   config.action_mailer.raise_delivery_errors = true
 
@@ -77,13 +77,14 @@ Rails.application.configure do
 
 
   config.action_mailer.delivery_method=:smtp
-  config.action_mailer.raise_delivery_errors = true
+  config.action_mailer.raise_delivery_errors = false
 
   # Gmail SMTP server setup
   ActionMailer::Base.smtp_settings = {
-    :address => ENV["MAIL_HOST"], # gmail: smtp.gmail.com", outlook: smtp.live.com # outlook
+    :address => "smtp.gmail.com", #ENV["MAIL_HOST"], # gmail: smtp.gmail.com", outlook: smtp.live.com # outlook
     :enable_starttls_auto => true,
     :port => 587,
+    :domain => ENV["GMAIL_DOMAIN"],
     :authentication => :plain,
     :user_name => ENV["MAIL_USERNAME"],
     :password => ENV["MAIL_PASSWORD"]

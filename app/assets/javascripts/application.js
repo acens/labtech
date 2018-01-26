@@ -27,6 +27,7 @@
 //= require components/masonry.min
 //= require jquery.nav
 //= require turbolinks
+//= require ckeditor/init
 //= require_tree .
 
 
