@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
   root to: "home#index"
 
+# Blog:
+    resources :blog
+
 # posts :
     resources :post
     get '/posts' => 'posts#post'

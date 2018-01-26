@@ -2,7 +2,7 @@ pt-BR:
   activerecord:
     models:
       course: "Cursos"
-      post: "Blog"
+      post: "Post(Blog)"
       member: "Membro"
       project: "Projetos(Portifólio)"
     attributes:
