@@ -30,20 +30,18 @@
 <!--========== END SLIDER ==========-->
 
 <div class="BackBlog">
-      <div align="center">
-        <h1 class="titleBlog"><%= @post.title%></h1>
-        <div class="margin-b-20">
-            <div class="margin-b-20">
-                <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                    <%= image_tag @post.photo(:medium), class: "img-responsive"%>
-                </div>
-            </div>
-        </div>
-      </div>
         <div class="container" align="center">
             <div class="row justify-content-md-center">
                 <div class="container">
-                    <p class="description-blog-page"><%= @post.description %></p>
+                  <h1 class="titleBlog"><%= @post.title%></h1>
+                  <div class="margin-b-20">
+                      <div class="margin-b-20">
+                          <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                              <%= image_tag @post.photo(:medium), class: "img-responsive"%>
+                          </div>
+                      </div>
+                  </div>
+                  <p class="description-blog-page"><%= @post.description %></p>
                 </div>
 
             </div>
