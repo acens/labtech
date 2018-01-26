@@ -11,8 +11,7 @@
 
         redirect_to root_url, notice: 'Obrigado pela sua inscrição. Em breve entraremos em contato!'
       else
-        error: 'Inscrição não enviada.'
-        render :new
+        render :new, error: 'Inscrição não enviada.'
       end
 
     end
