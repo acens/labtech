@@ -1,18 +1,20 @@
-/*.BackBlog{
-    background-image: url("/images/BackBlog.jpg");
+.BackBlog{
+    background-color:rgba(#111312, 0.97);
     height: 100%;
     width: auto;
-    position: fixed;
-}*/
-
-.BackBlog{
-    margin-top: 100px;
 }
+.BackBlog .container{
+  background-color: white;
+  margin-top: 50px;
+}
+
 
 .description-blog-page{
-    color:gray;
+    color:black;
+    text-align: left;
+    text-indent: 20px;
 }
 
-/*.titleBlog{
+.titleBlog{
     color: white;
-}*/
+}

@@ -1,22 +1,51 @@
 
+<!--========== SLIDER ==========-->
+    <section id="ViewBlog">
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <div class="container">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                </ol>
+            </div>
 
-<div class="BackBlog">
-    <div class="bg-color-sky-light">
-        <div class="content-lg container">
-
-        <div class="container" align="center">
-            <div class="row justify-content-md-center">
-                <h1 class="titleBlog"><%= @post.title%></h1>
-                <div class="margin-b-20">
-                    <div class="margin-b-20">
-                        <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                            <%= image_tag @post.photo(:medium), class: "img-responsive"%>
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img class="img-responsive" src="/images/BackBlog.jpg" alt="Slider Image">
+                    <div class="container">
+                        <div class="carousel-centered">
+                            <div class="margin-b-40">
+                                <h1 class="carousel-title">Blog</h1>
+                                <p class="description">Em probabilidade e estatística, a distribuição normal é uma das
+                                    <br/>distribuições de probabilidade mais utilizada para modelar fenômenos naturais.
+                                </p>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <p class="description-blog-page"><%= @post.description %></p>
+            </div>
+          </div>
+</section>
+<!--========== END SLIDER ==========-->
+
+<div class="BackBlog">
+      <div align="center">
+        <h1 class="titleBlog"><%= @post.title%></h1>
+        <div class="margin-b-20">
+            <div class="margin-b-20">
+                <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                    <%= image_tag @post.photo(:medium), class: "img-responsive"%>
+                </div>
             </div>
         </div>
+      </div>
+        <div class="container" align="center">
+            <div class="row justify-content-md-center">
+                <div class="container">
+                    <p class="description-blog-page"><%= @post.description %></p>
+                </div>
+
+            </div>
         </div>
-    </div>
 </div>

@@ -463,7 +463,7 @@ fieldset[disabled] .btn-theme {
 }
 
 .footer {
-  background-color: #33353a;
+  background-color: rgba(#323439, 0.94);
 }
 
 .footer .footer-seperator {
@@ -1230,12 +1230,10 @@ fieldset[disabled] .btn-theme {
   	[Content]
 ------------------------------------------------------------------*/
 .content {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-bottom: 45px;
 }
 
 .content-sm {
-  padding-top: 60px;
   padding-bottom: 60px;
 }
 

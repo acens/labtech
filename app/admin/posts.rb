@@ -16,10 +16,10 @@ actions :all
 form title: 'Novo post' do |f|
  f.inputs 'CRIAR NOVO POST' do
     f.input :title
-    f.input :description
+    f.input :description, :as => :ckeditor
     f.input :photo, as: :file
-    actions
   end
+  f.actions
 end
 
 
