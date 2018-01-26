@@ -9,7 +9,7 @@
       @subscription.request = request
       if @subscription.deliver
 
-        redirect_to root_url, flash.now[:notice] = 'Obrigado pela sua inscrição. Em breve entraremos em contato!'
+        redirect_to root_url, flash.now[:notice]: 'Obrigado pela sua inscrição. Em breve entraremos em contato!'
       else
         flash.now[:error] = 'Inscrição não enviada.'
         render :new
