@@ -22,17 +22,9 @@ form title: 'Novo post' do |f|
   end
 end
 
+
 index do
     selectable_column
-    id_column
-    column :title
-    column :photo_file_name
-    column :admin_user_id
-    actions
-end
-
-index do
-
     column :title
     column :photo_file_name
     column :photo_content_type
@@ -41,6 +33,7 @@ index do
     column :admin_user_id
     column :created_at, null: false
     column :updated_at, null: false
+    actions
 end
 
 
