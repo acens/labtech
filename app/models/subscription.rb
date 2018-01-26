@@ -10,8 +10,8 @@ class Subscription < MailForm::Base
   def headers
     {
       :subject => "Inscrição Curso/Projetos.",
-      :to => "labtech-ph@outlook.com",
-      :from => %("#{name}"<#{email}> "#{matricula}" "#{message}" )
+      :to => "teste.acens@gmail.com",
+      :from => email #{}%("#{name}"<#{email}> "#{matricula}" "#{message}" )
     }
   end
 end
