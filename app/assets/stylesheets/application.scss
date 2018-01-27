@@ -9,6 +9,15 @@
 @import 'about';
 @import 'project.css';
 
+.labtech-loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background: #FFF url(/images/loader.gif) center center no-repeat;
+}
 
 .espaco {
   margin-top: 60px;

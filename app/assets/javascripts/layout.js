@@ -90,7 +90,7 @@ $(document).ready(function() {
     Layout.init();
 });
 
-$(window).load(function() {
+$(window).on('load', function() {
     // Animate loader off screen
     $(".page-loader").fadeOut("slow");
 });

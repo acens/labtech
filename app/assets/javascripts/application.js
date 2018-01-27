@@ -30,6 +30,10 @@
 //= require ckeditor/init
 //= require_tree .
 
+$(window).on('load',function() {
+    // Animate loader off screen
+    $(".labtech-loader").fadeOut(3000);
+});
 
 $('#nav').onePageNav({
 	currentClass: 'current',
