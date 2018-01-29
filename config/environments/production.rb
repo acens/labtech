@@ -60,35 +60,34 @@ Rails.application.configure do
   # Use a real queuing backend for Active Job (and separate queues per environment)
   # config.active_job.queue_adapter     = :resque
   # config.active_job.queue_name_prefix = "labtech_#{Rails.env}"
+
+
+  # Devise configuration
+  config.action_mailer.default_url_options = { host: 'lab-tech.herokuapp.com' }
+
   # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = false
 
   config.action_mailer.perform_caching = false
 
-  config.action_mailer.default_url_options = { host: 'lab-tech.herokuapp.com'}
+
   Rails.application.routes.default_url_options[:host] = 'lab-tech.herokuapp.com'
-  # Don't care if the mailer can't send.
-  config.action_mailer.raise_delivery_errors = true
 
+  config.action_mailer.delivery_method = :smtp
   config.action_mailer.perform_deliveries = true
-
-  config.action_mailer.perform_caching = false
-  config.action_mailer.default :charset => "utf-8"
-
-
-  config.action_mailer.delivery_method=:smtp
   config.action_mailer.raise_delivery_errors = false
+  config.action_mailer.default :charset => "utf-8"
 
   # Gmail SMTP server setup
   ActionMailer::Base.smtp_settings = {
-    :address => "smtp.gmail.com", #ENV["MAIL_HOST"], # gmail: smtp.gmail.com", outlook: smtp.live.com # outlook
+    :address => "smtp.gmail.com",
     :enable_starttls_auto => true,
     :port => 587,
-    :domain => ENV["GMAIL_DOMAIN"],
+    domain: ENV["GMAIL_DOMAIN"],
     :authentication => :plain,
-    :user_name => ENV["MAIL_USERNAME"],
-    :password => ENV["MAIL_PASSWORD"]
+    :user_name => ENV["GMAIL_USERNAME"],
+    :password => ENV["GMAIL_PASSWORD"]
   }
+
 
   # Ignore bad email addresses and do not raise email delivery errors.
   # Set this to true and configure the email server for immediate delivery to raise delivery errors.
@@ -103,6 +102,8 @@ Rails.application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+
+  config.exceptions_app = self.routes
 
   # Use a different logger for distributed setups.
   # require 'syslog/logger'
