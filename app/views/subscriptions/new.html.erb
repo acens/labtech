@@ -16,11 +16,11 @@
         <%= f.input :email, label: 'E-mail', input_html: { class: 'form-control', placeholder: "Insira seu E-mail"} %>
       </div>
       <div class="form-group">
-        <%= f.input :message, as: :text, label: 'Mensagem', input_html: { class: 'form-control', placeholder: "Escreva sua mensagem"} %>
+        <%= f.input :message, as: :text, label: 'Mensagem', input_html: { rows:8, class: 'form-control', placeholder: "Escreva sua mensagem"} %>
       </div>
       <div class="form-group">
         <%=f.label 'Anexe seu Currículo'%>
-        <%= f.file_field :file, label: 'Anexe seu Currículo', input_html: { rows: 8, class: 'form-control', placeholder: "seu currículo"}%>
+        <%= f.file_field :file, label: 'Anexe seu Currículo', input_html: { class: 'form-control', placeholder: "seu currículo"}%>
       </div>
       <div class="form-group">
         <%= f.label "Selecione uma opção"%>
