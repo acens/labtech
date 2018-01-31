@@ -11,6 +11,14 @@
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 </ol>
             </div>
+            <% if flash[:notice] %>
+                <div class="alert alert-danger alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                  <%= flash[:notice] %>
+                </div>
+            <%end%>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
@@ -38,7 +46,7 @@
                                     <br/>e inscrição para voluntariados em projetos.
                                 </p>
                             </div>
-                            <%= link_to "Saiba mais", subscriptions_url , class: "btn-theme btn-theme-sm btn-white-brd text-uppercase" %>
+                            <%= link_to "Saiba mais", contacts_url , class: "btn-theme btn-theme-sm btn-white-brd text-uppercase" %>
                         </div>
                     </div>
                 </div>
@@ -107,7 +115,7 @@
                                   <li class="pricing-list-item"><%= curso.professor%></li>
                                   <li class="pricing-list-item"><%= curso.data%></li>
                               </ul>
-                              <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
+                              <%= link_to 'Inscrição' , contacts_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
                           </div>
                       </div>
                   </div>
@@ -131,7 +139,7 @@
                                   <li class="pricing-list-item"><%= curso.professor%></li>
                                   <li class="pricing-list-item"><%= curso.data%></li>
                               </ul>
-                              <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
+                              <%= link_to 'Inscrição' , contacts_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
                           </div>
                       </div>
                   </div>
@@ -155,56 +163,14 @@
                                   <li class="pricing-list-item"><%= curso.professor%></li>
                                   <li class="pricing-list-item"><%= curso.data%></li>
                               </ul>
-                              <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
+                              <%= link_to 'Inscrição' , contacts_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
                           </div>
                       </div>
                   </div>
                 <%count = count+1%>
                 <%next%>
                 <%end%>
-
-
-
-
-
                 <%end%>
-                <!--
-                <div class="col-sm-4 sm-margin-b-2">
-                    <div class="wow fadeInUp" data-wow-duration=".3" data-wow-delay=".2s">
-
-                        <div class="pricing pricing-active">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-chemistry"></i>
-                                <h3>Curso de Big Data</h3>
-                                <p class="description-blog">Descrição do curso</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">lista 1</li>
-                                <li class="pricing-list-item">lista 2</li>
-                                <li class="pricing-list-item">lista 3</li>
-                            </ul>
-                            <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-sm-4">
-                    <div class="wow fadeInRight" data-wow-duration=".3" data-wow-delay=".1s">
-
-                        <div class="pricing">
-                            <div class="margin-b-30">
-                                <i class="pricing-icon icon-chemistry"></i>
-                                <h3>Curso de Big Data</h3>
-                                <p class="description-blog">Descrição do curso</p>
-                            </div>
-                            <ul class="list-unstyled pricing-list margin-b-50">
-                                <li class="pricing-list-item">lista 1</li>
-                                <li class="pricing-list-item">lista 2</li>
-                                <li class="pricing-list-item">lista 3</li>
-                            </ul>
-                            <%= link_to 'Inscrição' , subscriptions_url , class:  "btn-theme btn-theme-sm btn-default-bg text-uppercase" %>
-                        </div> -->
-                        <!-- End Pricing -->
                     </div>
                 </div>
             </div>

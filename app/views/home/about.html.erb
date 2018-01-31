@@ -1,140 +1,135 @@
-    <section id="about">
-        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-            <div class="container">
-                <!-- Indicators -->
-                <ol class="carousel-indicators">
-                </ol>
+<section id="about">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div class="container">
+      <!-- Indicators -->
+      <ol class="carousel-indicators"></ol>
+    </div>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img class="img-responsive" src="/images/02top.jpg" alt="Slider Image">
+        <div class="container">
+          <div class="carousel-centered">
+            <div class="margin-b-40">
+              <h1 class="carousel-title">Quem Somos</h1>
+              <p>
+                Descrição exemplo, Laboratório da computação , localizada no Mestrado da
+                <br/>
+                UECE (Universidade Estadual do Ceará)</p>
             </div>
-
-            <!-- Wrapper for slides -->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img class="img-responsive" src="/images/02top.jpg" alt="Slider Image">
-                    <div class="container">
-                        <div class="carousel-centered">
-                            <div class="margin-b-40">
-                                <h1 class="carousel-title">Quem Somos</h1>
-                                <p> Descrição exemplo, Laboratório da computação , localizada no Mestrado da
-                                    <br/> UECE (Universidade Estadual do Ceará)</p>
-                            </div>
-                        </div>
-      </section>
-<!--========== END SLIDER ==========-->
-
-
-
-
-
-<!--========== PAGE LAYOUT ABOUT ==========-->
-            <section id="us">
-                  <!-- Service -->
-                    <div class="bg-color-sky-light" data-auto-height="true">
-                        <div class="content-lg container">
-                            <div class="row row-space-1 margin-b-2">
-                                <div class="col-sm-4 sm-margin-b-2">
-                                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
-                                        <div class="service" data-height="height">
-                                            <div class="service-element">
-                                                <i class="service-icon icon-screen-tablet"></i>
-                                            </div>
-                                            <div class="service-info">
-                                                <h3>Desenvolvimento Mobile</h3>
-                                                <p class="margin-b-5">Aplicativos , PWA , kotlin , java ... </p>
-                                            </div>
-                                            <!-- <a href="#" class="content-wrapper-link"></a> -->
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4 sm-margin-b-2">
-                                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
-                                        <div class="service" data-height="height">
-                                            <div class="service-element">
-                                                <i class="service-icon icon-screen-tablet"></i>
-                                            </div>
-                                            <div class="service-info">
-                                                <h3>Sistemas</h3>
-                                                <p class="margin-b-5">Sistemas embarcados, arduino, Desktop, Data Centers </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-sm-4">
-                                    <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
-                                        <div class="service" data-height="height">
-                                            <div class="service-element">
-                                                <i class="service-icon icon-badge"></i>
-                                            </div>
-                                            <div class="service-info">
-                                                <h3>Manutenção de Sitemas</h3>
-                                                <p class="margin-b-5">Reparos e melhorias, Suporte técnico e treinamento</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!--// end row -->
-
-                    <!-- About text-->
-                    <div class="content-lg container">
-                        <div class="row margin-b-20">
-                            <div class="col-sm-6">
-                                <h2>About</h2>
-                            </div>
-                        </div>
-                        <!--// end row -->
-
-                        <div class="row">
-                            <div class="col-sm-7 sm-margin-b-50">
-                                <div class="margin-b-30">
-                                    <p class="aboutDesc"> Algo Aleatório ?: Lorem ipsum dolor sit amet
-                                        consectetur adipiscing elit sed tempor incididunt ut laboret dolore
-                                        adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua.
-                                        Ut enimet minim veniam magna aliqua. Ut enim minim veniam exercitation
-                                        laboris ut siad consequat siad minim enum esqudiat dolore.</p>
-                                </div>
-                                <p class="aboutDesc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt
-                                    ut laboret tempor incididunt dolore magna consequat siad minim aliqua. Lorem
-                                    ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut
-                                    laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad
-                                    consequat siad minim enum esqudiat dolore.</p>
-                            </div>
-                            <div class="col-sm-4 col-sm-offset-1">
-                                <img class="img-responsive" src="/images/01.jpg" alt="Our Office">
-                            </div>
-                        </div>
-                        <!--// end row -->
-                    </div>
-                  <!-- End About text -->
-
-  <!-- Team Section -->
-  <div class="bg-color-sky-light">
-      <div class="content-lg container">
-          <div class="row margin-b-40">
-              <div class="col-sm-6">
-                  <h2>Equipe</h2>
-                  <p class="aboutDesc">Desenvolvedores do LabTech</p>
-              </div>
           </div>
-          <!--// end row -->
+        </section>
+        <!--========== END SLIDER ==========-->
 
-          <div class="row">
-              <!-- Team -->
-              <% @member.each do |member| %>
-              <div class="col-sm-4 sm-margin-b-50">
-                  <div class="bg-color-white margin-b-20">
-                      <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                          <%= image_tag member.photo(:medium), class: "img-responsive"%>
+        <!--========== PAGE LAYOUT ABOUT ==========-->
+        <section id="us">
+          <!-- Service -->
+          <div class="bg-color-sky-light" data-auto-height="true">
+            <div class="content-lg container">
+              <div class="row row-space-1 margin-b-2">
+                <div class="col-sm-4 sm-margin-b-2">
+                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".3s">
+                    <div class="service" data-height="height">
+                      <div class="service-element">
+                        <i class="service-icon icon-screen-tablet"></i>
                       </div>
+                      <div class="service-info">
+                        <h3>Desenvolvimento Mobile</h3>
+                        <p class="margin-b-5">Aplicativos , PWA , kotlin , java ...
+                        </p>
+                      </div>
+                      <!-- <a href="#" class="content-wrapper-link"></a> -->
+                    </div>
                   </div>
-                  <h4><%= member.name%><span class="text-uppercase margin-l-20"><%= member.description%></span></h4>
-                  <!-- <p class="aboutDesc"></p> -->
-                  <%= member.email%>
+                </div>
+                <div class="col-sm-4 sm-margin-b-2">
+                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".2s">
+                    <div class="service" data-height="height">
+                      <div class="service-element">
+                        <i class="service-icon icon-screen-tablet"></i>
+                      </div>
+                      <div class="service-info">
+                        <h3>Sistemas</h3>
+                        <p class="margin-b-5">Sistemas embarcados, arduino, Desktop, Data Centers
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-sm-4">
+                  <div class="wow fadeInLeft" data-wow-duration=".3" data-wow-delay=".1s">
+                    <div class="service" data-height="height">
+                      <div class="service-element">
+                        <i class="service-icon icon-badge"></i>
+                      </div>
+                      <div class="service-info">
+                        <h3>Manutenção de Sitemas</h3>
+                        <p class="margin-b-5">Reparos e melhorias, Suporte técnico e treinamento</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <%end%>
+              <!--// end row -->
+
+              <!-- About text-->
+              <div class="content-lg container">
+                <div class="row margin-b-20">
+                  <div class="col-sm-6">
+                    <h2>About</h2>
+                  </div>
+                </div>
+                <!--// end row -->
+
+                <div class="row">
+                  <div class="col-sm-7 sm-margin-b-50">
+                    <div class="margin-b-30">
+                      <p class="aboutDesc">
+                        Algo Aleatório ?: Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua. Ut enimet minim veniam magna aliqua. Ut enim minim veniam
+                        exercitation laboris ut siad consequat siad minim enum esqudiat dolore.</p>
+                    </div>
+                    <p class="aboutDesc">Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret tempor incididunt dolore magna consequat siad minim aliqua. Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut
+                      laboret dolore magna aliqua. Ut enim minim veniam exercitation laboris ut siad consequat siad minim enum esqudiat dolore.</p>
+                  </div>
+                  <div class="col-sm-4 col-sm-offset-1">
+                    <img class="img-responsive" src="/images/01.jpg" alt="Our Office">
+                  </div>
+                </div>
+                <!--// end row -->
+              </div>
+              <!-- End About text -->
+
+              <!-- Team Section -->
+              <div class="bg-color-sky-light">
+                <div class="content-lg container">
+                  <div class="row margin-b-40">
+                    <div class="col-sm-6">
+                      <h2>Equipe</h2>
+                      <p class="aboutDesc">Desenvolvedores do LabTech</p>
+                    </div>
+                  </div>
+                  <!--// end row -->
+
+                  <div class="row">
+                    <!-- Team -->
+                    <% @member.each do |member| %>
+                      <div class="col-sm-4 sm-margin-b-50">
+                        <div class="bg-color-white margin-b-20">
+                          <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
+                            <%= image_tag member.photo(:medium), class: "img-responsive"%>
+                          </div>
+                        </div>
+                        <h4><%= member.name%>
+                          <span class="text-uppercase margin-l-20"><%= member.description%></span></h4>
+                        <!-- <p class="aboutDesc"></p> -->
+                        <%= member.email%>
+                      </div>
+                    <%end%>
+                    <!-- End Team -->
+                  </div>
+                  <!--// end row -->
+                </div>
+              </div>
               <!-- End Team -->
-          </div>
-          <!--// end row -->
-      </div>
-  </div>
-  <!-- End Team -->
             </section>

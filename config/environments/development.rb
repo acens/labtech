@@ -52,12 +52,12 @@ config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
   # Gmail SMTP server setup
   ActionMailer::Base.smtp_settings = {
-    :address => ENV["MAIL_HOST"], # gmail: smtp.gmail.com", outlook: smtp.live.com # outlook
+    :address => "smtp.gmail.com",
     :enable_starttls_auto => true,
     :port => 587,
     :authentication => :plain,
-    :user_name => ENV["MAIL_USERNAME"],
-    :password => ENV["MAIL_PASSWORD"]
+    :user_name => ENV["GMAIL_USERNAME"],
+    :password => ENV["GMAIL_PASSWORD"]
   }
 
   # Print deprecation notices to the Rails logger.

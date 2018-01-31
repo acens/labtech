@@ -1,0 +1,76 @@
+.hidden {
+    display: none;
+}
+
+.title-form{
+    color:rgb(246, 246, 246);
+}
+
+.form-group .form-control{
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a6a7aa;
+    background: #fafafa;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+
+.backG{
+    padding-top: 60px;
+    color: #ffffff;
+    position: relative;
+    min-height: 350px;
+    background: url("/images/02top.jpg") no-repeat scroll 0px 100% / cover transparent;
+}
+    /* height: 100vh;;
+    width: 100%;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center center; */
+
+    /* position: fixed; */
+/* } */
+
+.containernewform{
+  color: white;
+  padding: 10px;
+}
+
+.select{
+    color: black;
+}
+
+/*flash*/
+
+.alert-error {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+}
+
+.alert-alert {
+    background-color: #f2dede;
+    border-color: #eed3d7;
+    color: #b94a48;
+    text-align: left;
+}
+
+.alert-success {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+}
+
+.alert-notice {
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    color: #468847;
+    text-align: left;
+}
