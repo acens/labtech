@@ -3,7 +3,7 @@
   <head>
     <title>Lab Tech</title>
     <%= csrf_meta_tags %>
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,91 +11,38 @@
     <meta content="" name="acens"/>
 
     <!-- GLOBAL MANDATORY STYLES -->
-    <link href="http://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
-    <!-- <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/>
-    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
+    <link href="https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700" rel="stylesheet" type="text/css">
+    <!-- <link href="vendor/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css"/> <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css"/> -->
 
     <!-- PAGE LEVEL PLUGIN STYLES -->
-    <!-- <link href="css/animate.css" rel="stylesheet">
-    <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/> -->
+    <!-- <link href="css/animate.css" rel="stylesheet"> <link href="vendor/swiper/css/swiper.min.css" rel="stylesheet" type="text/css"/> -->
 
     <!-- THEME STYLES -->
     <!-- <link href="css/layout.min.css" rel="stylesheet" type="text/css"/> -->
 
     <!-- Favicon -->
-     <%= favicon_link_tag 'logo.ico', rel: 'apple-touch-icon' %>
-	   <%= favicon_link_tag 'logo.ico', :rel => 'shortcut icon' %>
+    <%= favicon_link_tag 'logo.ico', rel: 'apple-touch-icon' %>
+    <%= favicon_link_tag 'logo.ico', :rel => 'shortcut icon' %>
     <meta content="" name="description"/>
     <meta content="" name="acens"/>
 
   </head>
 
   <body>
-    <div class="labtech-loader"></div>  <!-- Display loading image while page loads -->
+    <div class="labtech-loader"></div>
+    <!-- Display loading image while page loads -->
     <!-- <div class="page-loader"></div> -->
     <!--========== NAV ==========-->
-          <header class="header navbar-fixed-top">
-                <!-- Navbar -->
-                <nav class="navbar" role="navigation">
-                    <div class="container">
-                        <!-- Brand and toggle get grouped for better mobile display -->
-                        <div class="menu-container">
-                            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
-                                <span class="sr-only">Toggle navigation</span>
-                                <span class="toggle-icon"></span>
-                            </button>
-
-                            <!-- Logo -->
-                            <div class="logo">
-                                    <a href="/"><img class="logo-img logo-img-main" src="/images/LabTech_logo_dark.png" alt="Logo"></a>
-                                    <a href="/"><img class="logo-img logo-img-active" src="/images/LabTech_logo.png" alt="Logo"></a>
-
-                            </div>
-                            <!-- End Logo -->
-                        </div>
-
-                        <!-- Collect the nav links, forms, and other content for toggling -->
-                        <div class="collapse navbar-collapse nav-collapse">
-                            <div class="menu-container">
-                                <ul id="nav" class="navbar-nav navbar-nav-right">
-                                    <!-- <li class="nav-item current">
-                                      <%= link_to "Início", root_url, class: "external nav-item-child nav-item-hover active" %>
-                                    </li> -->
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/">Início</a></li>
-                                    <!-- <li class="nav-item current">
-                                      <%= link_to "Blog", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li> -->
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/#blog">Blog</a></li>
-                                    <!-- <li class="nav-item current">
-                                      <%= link_to "Cursos", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li> -->
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/#course">Cursos</a></li>
-                                    <!-- <li class="nav-item current">
-                                      <%= link_to "Portifólio", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li> -->
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/about">Quem Somos</a></li>
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="projetos">Portifólio</a></li>
-                                    <!-- <li class="nav-item current">
-                                      <%= link_to "contato", root_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li> -->
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="/#contact">Contato</a></li>
-                                    <!-- <li class="nav-item current">
-                                      <%= link_to "Inscrições", subscriptions_url, class: "external nav-item-child nav-item-hover" %>
-                                    </li> -->
-                                    <li class="nav-item"><a class="nav-item-child nav-item-hover" href="subscriptions">Inscrições</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- End Navbar Collapse -->
-                    </div>
-                </nav>
-                <!-- Navbar -->
-            </header>
+    <%= render 'layouts/navbar'%>
     <!--========== END NAV ==========-->
 
-     <!--  <p class="notice"><%= notice %></p>
-      <p class="alert"><%= alert %></p> -->
     <%= yield %>
+    <script type="text/javascript">
+      $(window).on('load', function () {
+        // Animate loader off screen
+        $(".labtech-loader").fadeOut(1000);
+      });
+    </script>
   </body>
 
 </html>

@@ -1,15 +1,4 @@
-// This is a manifest file that'll be compiled into application.js, which will include all the files
-// listed below.
-//
-// Any JavaScript/Coffee file within this directory, lib/assets/javascripts, or any plugin's
-// vendor/assets/javascripts directory can be referenced here using a relative path.
-//
-// It's not advisable to add code directly here, but if you do, it'll appear at the bottom of the
-// compiled file. JavaScript code in this file should be added after the last require_* statement.
-//
-// Read Sprockets README (https://github.com/rails/sprockets#sprockets-directives) for details
-// about supported directives.
-//
+
 //= require rails-ujs
 //= require active_admin
 //= require vendor/jquery-migrate.min
@@ -25,21 +14,15 @@
 //= require components/wow.min
 //= require components/swiper.min
 //= require components/masonry.min
-//= require jquery.nav
-//= require turbolinks
+//= require smoothscroll
+// require turbolinks
 //= require ckeditor/init
 //= require_tree .
 
-$(window).on('load',function() {
-    // Animate loader off screen
-    $(".labtech-loader").fadeOut(3000);
-});
-
-$('#nav').onePageNav({
-	currentClass: 'current',
-	changeHash: false,
-	scrollSpeed: 750,
-	scrollThreshold: 0.5,
-	filter: ':not(.external)',
-	easing: 'swing'
+$('.page-scroll').bind('click', function(event){
+    var $anchor = $(this);
+    $('html, body').stop().animate({
+        scrollTop: $($anchor.attr('href')).offset().top -64
+    }, 1500, 'easeInOutExpo');
+    event.preventDefault();
 });
