@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  get 'messages/new'
+
   # get 'home/index'
 
   devise_for :admin_users, ActiveAdmin::Devise.config
@@ -28,5 +30,8 @@ Rails.application.routes.draw do
 
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
+
+  match '/message',     to: 'message#new',             via: 'get'
+resources "message", only: [:new, :create]
 
 end
