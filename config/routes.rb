@@ -25,13 +25,11 @@ Rails.application.routes.draw do
     get '/projetos' => 'project#project'
 
 # Subscription
-  # match '/subscriptions', to: 'subscriptions#new', via: 'get'
-  # resources :subscriptions, only: [:new, :create]
-
   match '/contacts',     to: 'contacts#new',             via: 'get'
   resources "contacts", only: [:new, :create]
 
-  match '/message',     to: 'message#new',             via: 'get'
-resources "message", only: [:new, :create]
+# Contact Us
+  match '/fmails',     to: 'fmails#new',             via: 'get'
+  resources "fmails", only: [:new, :create]
 
 end

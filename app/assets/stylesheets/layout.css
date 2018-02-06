@@ -16,7 +16,7 @@ p {
   font-size: 15px;
   font-weight: 400;
   font-family: Hind, sans-serif;
-  color: white;
+  color: black;
   line-height: 1.4;
   margin-bottom: 15px;
 }
@@ -1588,4 +1588,21 @@ fieldset[disabled] .btn-theme {
     height: 100%;
     z-index: 99999;
     background: #FFF url("/images/LabTech.gif") center center no-repeat;
+}
+
+.form-group .form-control{
+    height: 50px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a6a7aa;
+    background: #fafafa;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.15);
+}
+
+.content-lg .row{
+    padding-top: 60px;
 }

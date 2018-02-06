@@ -1,0 +1,49 @@
+<section id="contact">
+  <div class="content-lg container">
+      <div class="row">
+          <div class="col-sm-5 sm-margin-b-30">
+              <h2 class="color-white">Entre em contato Conosco</h2>
+
+              <%= simple_form_for @fmail, :html => {:class => 'form-group' } do |f| %>
+              <div class="form-group">
+                <%= f.label 'Nome', class: "color-white"%>
+                <%= f.text_field :nome, label:'Nome', class:"form-control margin-b-30", placeholder:"Nome"  %>
+              </div>
+              <div class="form-group">
+                <%= f.label 'Email', class: "color-white"%>
+                <%= f.text_field :email, label:'Email', class:"form-control footer-input margin-b-30", placeholder:"email@example.com" %>
+              </div>
+              <div class="form-group">
+                <%= f.label 'Telefone', class: "color-white"%>
+                <%= f.text_field :telefone, class:"form-control footer-input margin-b-30", placeholder:"(85) 9 0000-0000" %>
+              </div>
+              <div class="form-group">
+                  <%= f.label 'Mensagem' , class: "color-white" %>
+                  <%= f.text_field :mensagem, class:"form-control footer-input margin-b-30" ,placeholder:" Escreva sua mensagem aqui" %>
+              </div>
+
+              <div>
+              </br>
+                <%= f.button :submit, 'Enviar', :class=> "btn-theme btn-theme-sm btn-base-bg text-uppercase" %>
+              </div>
+              <% end %>
+
+              <!-- <input type="text" class="form-control footer-input margin-b-20" placeholder="Name" required>
+              <input type="email" class="form-control footer-input margin-b-20" placeholder="Email" required>
+              <input type="text" class="form-control footer-input margin-b-20" placeholder="Phone" required>
+              <textarea class="form-control footer-input margin-b-30" rows="6" placeholder="Message" required></textarea>
+              <button type="submit" class="btn-theme btn-theme-sm btn-base-bg text-uppercase">Enviar</button> -->
+          </div>
+          <!-- Google Map -->
+          <div id="map" class="col-sm-7">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3981.1116287323575!2d-38.554970849531145!3d-3.785878397232303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c74e93e3c021f9%3A0xc7981ffb851ce363!2sMACC!5e0!3m2!1spt-BR!2sbr!4v1516351781889" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <h2 class="color-white">Informações para contato</h2>
+            <h4 class="color-base">Telefone :</h4><h4 class="color-white">(85) 99955-7181</h4>
+            <h4 class="color-base">Endereço :</h4><h4 class="color-white">Av. Dr. Silas Munguba, 1700 - Campus do Itaperi, Fortaleza - CE, 60741-000 sala - X
+            <h4 class="color-base">Email :</h4><h4><a class="color-white">phmendes@gmail.com</a></h4>
+            </h4>
+          </div>
+      </div>
+      <!--// end row -->
+  </div>
+</section>
