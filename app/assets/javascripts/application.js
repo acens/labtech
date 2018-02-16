@@ -15,6 +15,7 @@
 //= require components/swiper.min
 //= require components/masonry.min
 //= require smoothscroll
+//= require bootstrap-notify.min
 //= require jquery_ujs
 // require turbolinks
 //= require ckeditor/init
@@ -25,5 +26,9 @@ $(document).on('click', 'a[href^="#"]', function (event) {
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 500);
+    }, 1000);
 });
+
+$(document).ready(function(){
+    $(".post-body img").addClass("img-responsive")
+})

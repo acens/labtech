@@ -9,7 +9,7 @@ class Fmail < MailForm::Base
   def headers
     {
       :subject => "Mensagem LabTech",
-      :to => "eduardo.patrick@acensjr.com",
+      :to => "teste.acens@gmail.com",
       :from => %("#{nome}" <#{email}>)
     }
   end

@@ -4,7 +4,7 @@
           <div class="col-sm-5 sm-margin-b-30">
               <h2 class="color-white">Entre em contato Conosco</h2>
 
-              <%= simple_form_for @fmail, :html => {:class => 'form-group' } do |f| %>
+              <%= simple_form_for Fmail.new, :html => {:class => 'form-group' } do |f| %>
               <div class="form-group">
                 <%= f.label 'Nome', class: "color-white"%>
                 <%= f.text_field :nome, label:'Nome', class:"form-control margin-b-30", placeholder:"Nome"  %>
