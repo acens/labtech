@@ -33,6 +33,8 @@ gem 'mail_form'
 
 gem 'simple_form'
 
+gem 'railties', '~> 5.1', '>= 5.1.4'
+
 # gem 'jquery-rails', '~> 4.3', '>= 4.3.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby

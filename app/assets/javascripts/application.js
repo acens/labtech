@@ -15,14 +15,15 @@
 //= require components/swiper.min
 //= require components/masonry.min
 //= require smoothscroll
+//= require jquery_ujs
 // require turbolinks
 //= require ckeditor/init
 //= require_tree .
 
-$('.page-scroll').bind('click', function(event){
-    var $anchor = $(this);
-    $('html, body').stop().animate({
-        scrollTop: $($anchor.attr('href')).offset().top -64
-    }, 1500, 'easeInOutExpo');
+$(document).on('click', 'a[href^="#"]', function (event) {
     event.preventDefault();
+
+    $('html, body').animate({
+        scrollTop: $($.attr(this, 'href')).offset().top
+    }, 500);
 });

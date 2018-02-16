@@ -318,6 +318,7 @@ DEPENDENCIES
   pg (~> 0.18)
   puma (~> 3.7)
   rails (~> 5.1.4)
+  railties (~> 5.1, >= 5.1.4)
   sass-rails (~> 5.0)
   selenium-webdriver
   simple_form
