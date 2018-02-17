@@ -1,0 +1,38 @@
+<script type="text/javascript">
+$(document).ready(function() {
+  <% unless notice.nil? %>
+    $.notify({
+      icon: "fa fa-thumbs-up",
+      message: "<%= notice %>"
+    }, {
+      type: "info",
+      allow_demiss: true,
+      offset: {
+        x: 50,
+        y: 100
+      },
+      animate: {
+        enter: 'animated fadeInRight',
+        exit: 'animated fadeOutLeft'
+      }
+    });
+  <% end %>
+  <% unless alert.nil? %>
+    $.notify({
+      icon: "fa fa-exclamation-triangle",
+      message: "<%= alert %>"
+    }, {
+      type: "danger",
+      allow_demiss: true,
+      offset: {
+        x: 50,
+        y: 100
+      },
+      animate: {
+        enter: 'animated fadeInRight',
+        exit: 'animated fadeOutLeft'
+      }
+    });
+  <% end %>
+});
+</script>

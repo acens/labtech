@@ -7,11 +7,10 @@ class FmailsController < ApplicationController
    @fmail = Fmail.new(params[:fmail])
    @fmail.request = request
    if @fmail.deliver
-     flash.now[:notice] = 'Obrigado, Em breve entraremos em contato!'
-     redirect_to root_url
+      redirect_to root_url, notice: 'Obrigado, Em breve entraremos em contato!'
    else
-     flash.now[:error] = 'Não foi possível enviar a mensagem!'
-     render :new
+     redirect_to root_url, alert: 'Não foi possível enviar a mensagem, tente novamente!'
+     # render partial: "new"
    end
  end
 end

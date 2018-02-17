@@ -56,8 +56,8 @@ config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
     :enable_starttls_auto => true,
     :port => 587,
     :authentication => :plain,
-    :user_name => ENV["GMAIL_USERNAME"],
-    :password => ENV["GMAIL_PASSWORD"]
+    :user_name => ENV["gmail_username"],
+    :password => ENV["gmail_password"]
   }
 
   # Print deprecation notices to the Rails logger.

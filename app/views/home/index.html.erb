@@ -11,14 +11,6 @@
                     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
                 </ol>
             </div>
-            <% if flash[:notice] %>
-                <div class="alert alert-danger alert-dismissible" role="alert">
-                    <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                    <%= flash[:notice] %>
-                </div>
-            <%end%>
 
             <!-- Wrapper for slides -->
             <div class="carousel-inner" role="listbox">
@@ -75,7 +67,9 @@
                         <div class="margin-b-20">
                             <div class="margin-b-20">
                                 <div class="wow zoomIn" data-wow-duration=".3" data-wow-delay=".1s">
-                                    <%= image_tag post.photo(:medium), class: "img-responsive"%>
+                                    <div class="post-body">
+                                        <%= image_tag post.photo(:medium), class: "img-responsive"%>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -177,6 +171,7 @@
                                 </div>
                             </section>
                             <!--========== END COURSE ==========-->
+                            <%= render "fmails/new"%>
 
                             <!--========== FOOTER / CONTACT ==========-->
                             <!-- <section id="contact"> <div class="content-lg container"> <div class="row"> <div class="col-sm-5 sm-margin-b-30"> <h2 class="color-white">Entre em contato Conosco</h2> <input type="text" class="form-control footer-input margin-b-20"
